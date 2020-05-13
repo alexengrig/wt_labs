@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0 16px;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: darkred;
+}
+
+.vangog-img-title {
+  font-family: cursive;
+}
+
+.link-to-home {
+  margin: 32px 0;
+}
+
+.biography {
+  background-color: antiquewhite;
+}
+
+.biography h1 {
+  text-align: center;
+}
+
+.biography h2 {
+  font-family: cursive;
+}
+
+.biography p {
+  font-family: arial, serif;
+  line-height: 1.5rem;
+}
+
+.works {
+  background-color: darkgrey;
+}
+
+.works h2 {
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.works ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.works ul li {
+  display: grid;
+  margin: 8px;
+}
+
+.works ul li span {
+  margin-top: 8px;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.periods {
+  background-color: azure;
+}
+
+.periods p {
+  font-family: cursive;
+}
+
+.periods img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.periods hr {
+  margin-top: 32px;
+  border: 1px solid gray;
+}
