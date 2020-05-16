@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  postgres:
+    container_name: wt-lab-3-postgre
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"

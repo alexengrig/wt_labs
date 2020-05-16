@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ван Гог | Отзывы</title>
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div>
+    <form method="post" action="/comments">
+        <p><label for="username-input">Username:</label></p>
+        <p><input id="username-input" name="username" type="text"></p>
+        <p><label for="text-input">Text:</label></p>
+        <p><textarea id="text-input" name="text"></textarea></p>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+<ul class="comment-list" th:if="${not #lists.isEmpty(comments)}">
+    <li class="comment-item" th:each="comment: ${comments}">
+        <b class="comment-username" th:text="${comment.username}"></b>
+        <span> пишет:</span>
+        <p class="comment-text" th:text="${comment.text}"></p>
+    </li>
+</ul>
+<div th:if="${#lists.isEmpty(comments)}">
+    <p>Отзывов нет</p>
+</div>
+<div class="link-to-home">
+    <a href="/">Вернуться на главную</a>
+</div>
+</body>
+</html>

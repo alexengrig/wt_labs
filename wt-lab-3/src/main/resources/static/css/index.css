@@ -121,3 +121,23 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+.comment-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-item{
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+
+.comment-username{
+}
+
+.comment-text{
+  font-family: cursive;
+}
